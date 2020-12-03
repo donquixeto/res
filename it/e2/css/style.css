@@ -1,0 +1,257 @@
+<style>
+    a,
+    b,
+    blockquote,
+    body,
+    dd,
+    div,
+    dl,
+    dt,
+    em,
+    fieldset,
+    font,
+    form,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    html,
+    i,
+    iframe,
+    img,
+    legend,
+    li,
+    ol,
+    p,
+    pre,
+    q,
+    s,
+    samp,
+    small,
+    span,
+    strike,
+    strong,
+    u,
+    ul {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0
+    }
+
+    body {
+        background-color: #000;
+        font-family: "helvetica neue", helvetica, arial, sans-serif;
+        font-size: medium !important;
+        overflow: hidden
+    }
+
+    .smaller {
+        font-size: smaller !important
+    }
+
+    h1 {
+        font-size: 22px !important;
+        line-height: 1.25 !important;
+        text-align: center;
+        background: #fff
+    }
+
+    .geo,
+    .handle,
+    a {
+        color: #3498db
+    }
+
+    .modal-backdrop {
+        background: 0 0 !important
+    }
+
+    .modal-footer {
+        padding: 9px 10px 10px !important;
+        margin-top: 10px !important;
+        text-align: center !important;
+        border-top: 1px solid #e5e5e5
+    }
+
+    .modal.in {
+        display: block
+    }
+
+    .radar {
+        margin: auto
+    }
+
+    .icheckbox_square-blue,
+    .iradio_square-blue {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+        padding: 0;
+        width: 22px;
+        height: 22px;
+        background: url("https://res.assetsocean.com/file/supersrc/it/c2/images/blue.png") no-repeat;
+        border: none;
+        cursor: pointer
+    }
+
+    .icheckbox_square-blue {
+        background-position: 0 0
+    }
+
+    .icheckbox_square-blue.hover {
+        background-position: -24px 0
+    }
+
+    .icheckbox_square-blue.checked {
+        background-position: -48px 0
+    }
+
+    .icheckbox_square-blue.disabled {
+        background-position: -72px 0;
+        cursor: default
+    }
+
+    .icheckbox_square-blue.checked.disabled {
+        background-position: -96px 0
+    }
+
+    .iradio_square-blue {
+        background-position: -120px 0
+    }
+
+    .iradio_square-blue.hover {
+        background-position: -144px 0
+    }
+
+    .iradio_square-blue.checked {
+        background-position: -168px 0
+    }
+
+    .iradio_square-blue.disabled {
+        background-position: -192px 0;
+        cursor: default
+    }
+
+    .iradio_square-blue.checked.disabled {
+        background-position: -216px 0
+    }
+
+    @media (-o-min-device-pixel-ratio:5/4),
+    (-webkit-min-device-pixel-ratio:1.25),
+    (min-resolution:120dpi) {
+        .icheckbox_square-blue,
+        .iradio_square-blue {
+            background-image: url());
+            -webkit-background-size: 240px 24px;
+            background-size: 240px 24px
+        }
+    }
+
+    ;
+    .bgthumb {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        z-index: 1
+    }
+
+    .radar,
+    div.quiz-modal {
+        z-index: 2000;
+        position: absolute;
+        width: 100%
+    }
+
+    .radar {
+        text-align: center;
+        padding-top: 5em;
+        padding-bottom: 0;
+        height: 100vh;
+        opacity: .9;
+        background: #fff;
+    }
+
+    .modal,
+    div.quiz-modal {
+        opacity: .95 !important
+    }
+
+    .modal p {
+        font-size: 14px !important
+    }
+
+    .radar h1 {
+        line-height: 3.5em !important
+    }
+
+    .quiz-modal .modal-header {
+        background: #bdc3c7 !important;
+        text-align: center;
+        color: #636d6e
+    }
+
+    .btns li {
+        border-radius: 35px;
+        width: 30px;
+        font-size: 1.25em;
+        margin: .25em;
+        display: inline-block;
+        padding: .1em;
+        color: #eee;
+        background: #7f8c8d;
+        opacity: .75
+    }
+
+    .btns li.active {
+        background: #fff;
+        color: #000;
+        opacity: 1
+    }
+
+    }
+
+    #bannerContainer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    #bannerContainer>div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+    .quiz-modal {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 0;
+    }
+
+    .modal-dialog {
+        margin: 0px auto;
+        position: absolute;
+        width: 100%;
+        max-width: 300px;
+        left: 50%;
+        bottom: 25% !important;
+        -webkit-transform: translateX(-50%) !important;
+        -ms-transform: translateX(-50%) !important;
+        -o-transform: translateX(-50%) !important;
+        transform: translateX(-50%) !important;
+    }
+</style>
