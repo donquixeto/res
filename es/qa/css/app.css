@@ -1,0 +1,83 @@
+body {
+    font-family: 'Open Sans', sans-serif
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: .66em auto;
+    color: rgba(255, 255, 255, 1)
+}
+
+@media screen and (max-width:480px) {
+    h1 {
+        font-size: 28px
+    }
+}
+
+.row.header-logo {
+    margin: .5em auto
+}
+
+.row.title {
+    background: linear-gradient(to bottom, #f0bd4e 0, #f0bd4e 49%, #f0ae1f 49%, #f0ae1f 100%)
+}
+
+.color--important {
+    color: rgba(13, 124, 135, 1)
+}
+
+.img-responsive {
+    margin: 0 auto
+}
+
+.heading-image {
+    margin-bottom: 20px
+}
+
+.cta img {
+    margin: 1.5em auto
+}
+
+.introduction {
+    padding-top: 1em
+}
+
+hr.stub {
+    width: 15%;
+    border-top: .25em solid rgba(13, 124, 135, 1);
+    margin: 5px auto
+}
+
+.survey {
+    margin: .75em auto 1.5em
+}
+
+#check1,
+#check2,
+#check3,
+#check4,
+#question-2,
+#question-3,
+#question-4,
+.cta,
+.loading {
+    display: none
+}
+
+.btn {
+    white-space: normal
+}
+
+.btn--cta {
+    color: rgba(255, 255, 255, 1);
+    background: rgba(13, 124, 135, 1)
+}
+
+.checks {
+    margin: 2em auto 1em
+}
+
+.cta p {
+    margin-bottom: 0
+}
