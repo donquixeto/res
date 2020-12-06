@@ -1,0 +1,281 @@
+@import "https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700";
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0
+}
+
+html {
+    font-size: 62.5%
+}
+
+body {
+    font-family: "Quattrocento Sans", sans-serif, Arial;
+    font-size: 100%;
+    margin: 0 auto;
+    min-height: 100%;
+    color: #32445c;
+    background-color: #fff
+}
+
+.displayCenter {
+    margin-top: 0px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.logo {
+    padding: 1rem 0rem 0rem 0rem;
+    max-height: 50px;
+    max-width: 300px;
+    z-index: 12;
+}
+
+.flashy {
+    background: #ef404f;
+    color: #fff;
+    width: 100%;
+    min-height: 20px;
+    color: #fff;
+    font-size: 3rem;
+    padding: 5px 0;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.step {
+    font-size: 2rem;
+    color: #000;
+    display: none;
+    margin: 0 auto;
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: center
+}
+
+.step .ok {
+    display: block;
+    /*height: 40px;*/
+    /*line-height: 40px;*/
+    border: 1px solid #ef404f;
+    background: #ef404f;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    color: #fff;
+    font-family: 'OpenSansB', Arial, sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+    cursor: pointer;
+    text-decoration: none;
+    /*height: 106px;*/
+    /*line-height: 106px;*/
+    /*font-size: 34px;*/
+    position: relative;
+    font-size: 30px;
+    width: 40%;
+    min-width: 250px;
+}
+
+.step .ok:hover {
+    background: #2cb04b;
+}
+
+.step .ok:after {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 28px;
+    position: absolute;
+    right: 40px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    background: url("../img/btnpart.png") no-repeat;
+    -webkit-animation: next 1.2s infinite normal ease-out;
+    -moz-animation: next 1.2s infinite normal ease-out;
+    animation: next 1.2s infinite normal ease-out
+}
+
+@-webkit-keyframes next {
+    0% {
+        opacity: 0;
+        right: 40px;
+    }
+    15% {
+        opacity: 1;
+        right: 30px;
+    }
+    100% {
+        opacity: 0;
+        right: 10px;
+    }
+}
+
+@-moz-keyframes next {
+    0% {
+        opacity: 0;
+        right: 40px;
+    }
+    15% {
+        opacity: 1;
+        right: 30px;
+    }
+    100% {
+        opacity: 0;
+        right: 10px;
+    }
+}
+
+@keyframes next {
+    0% {
+        opacity: 0;
+        right: 40px;
+    }
+    15% {
+        opacity: 1;
+        right: 30px;
+    }
+    100% {
+        opacity: 0;
+        right: 10px;
+    }
+}
+
+.step:nth-child(1) {
+    display: block
+}
+
+.step p {
+    font-size: 2rem;
+    padding: 2rem 0
+}
+
+.step.step_check .step_head {
+    text-transform: none
+}
+
+.choose_answer {
+    font-style: italic;
+    font-size: 2rem;
+    padding: 2rem 0 3rem 0;
+    display: block
+}
+
+.answer_box {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top
+}
+
+.checkbox_wrap {
+    margin: 0 auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 600px
+}
+
+.option {
+    width: 35%;
+    position: relative;
+    text-align: left;
+    cursor: pointer;
+    text-align: center;
+    margin: 2rem 2rem 10px 2%
+}
+
+.option img {
+    display: block;
+    width: 100%;
+    border: 3px solid #000;
+    border-radius: 8px
+}
+
+.option-title {
+    font-size: 2rem;
+    padding-top: 5px
+}
+
+.option.checked img {
+    border-color: #ef404f
+}
+
+.option.checked .option-title {
+    color: #ef404f
+}
+
+.btn {
+    color: #fff;
+    display: block;
+    margin: 2rem auto;
+    padding: 13px 0;
+    max-width: 220px;
+    width: 100%;
+    font-size: 2rem;
+    font-family: Arial;
+    border: none;
+    text-decoration: none;
+    background: #ef404f;
+}
+
+.btn:hover {
+    background: #2cb04b;
+}
+
+@media screen and (max-width: 799px) and (min-width: 561px) {
+    .displayCenter {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .displayCenter {
+        margin-top: 0;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        width: 100%;
+    }
+    html {
+        font-size: 55%
+    }
+    .answer_box {
+        display: block;
+        text-align: left
+    }
+    .girl {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    html {
+        font-size: 55%
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .girl {
+        width: 45%;
+    }
+}
