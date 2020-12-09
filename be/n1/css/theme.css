@@ -1,0 +1,1 @@
+html{background:#181818;}body{background:transparent;}.pic{background:#fff;border:10px solid #373737;}.carousel{.item { .transition(.7s ease-in-out opacity);left:0!important;}.next.left,.prev.right{opacity:1;z-index:1;}.active.left,.active.right{opacity:0;z-index:2;} }
