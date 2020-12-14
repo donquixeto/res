@@ -1,0 +1,493 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:400,300,700&display=swap";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+:focus {
+    outline: 0
+}
+
+img {
+    border: none;
+    display: inline-block
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+iframe {
+    border: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    display: none
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer !important
+}
+
+html {
+    font-size: 62.5%;
+    -webkit-text-size-adjust: 100%;
+    position: relative
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #fff;
+    line-height: 1.5;
+    font-size: 2rem;
+    background: #fff;
+    min-width: 320px
+}
+
+.wrapper {
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden
+}
+
+.center {
+    max-width: 960px;
+    margin: 0 auto
+}
+
+.header {
+    background: #1ebea5;
+    padding: 3rem 2rem
+}
+
+.header .center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 4.2rem;
+    font-family: Calibri, Arial, sans-serif;
+    white-space: nowrap
+}
+
+.logo-icon {
+    vertical-align: middle
+}
+
+.slogan {
+    text-transform: uppercase
+}
+
+.step-block {
+    flex: 1
+}
+
+.step-item {
+    display: none;
+    text-align: center;
+    background: url(../images/bg1.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    z-index: 1
+}
+
+.step-item.visible {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center
+}
+
+.step-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 960px;
+    width: 100%;
+    padding: 1rem
+}
+
+.step-1:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 101.3%;
+    width: 100%;
+    background: url(../images/1.webp) center 8px no-repeat;
+    background-size: auto 100%;
+    z-index: 1
+}
+
+.circle {
+    border-radius: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    flex-shrink: 0
+}
+
+.circle-info {
+    background: rgba(30, 190, 165, .80);
+    transform: rotate(-5deg) translateX(21vw);
+    width: 38rem;
+    height: 38rem;
+    font-size: 3rem;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap
+}
+
+.circle-info div {
+    width: 100%;
+    line-height: 1.2
+}
+
+.circle-info strong {
+    font-size: 4rem
+}
+
+.step-2 .circle-info:before,
+.step-2 .circle-info:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    letter-spacing: -1px;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 rgba(90, 153, 212, 1);
+    z-index: -1
+}
+
+.step-2 .circle-info:after {
+    animation: pulse 1.8s infinite
+}
+
+.step-2 .circle-info:before {
+    animation: pulse 1.8s infinite ease-out 0.5s
+}
+
+.step-2 {
+    background: url(../images/map1.jpg) center 0 no-repeat;
+    background-size: cover
+}
+
+.step-2 .step-content {
+    align-items: flex-start;
+    margin-top: 14rem
+}
+
+.pin {
+    position: absolute;
+    background: url(../images/pin.png) center top no-repeat;
+    background-size: contain;
+    width: 16rem;
+    height: 25rem;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(5deg);
+    animation: pinMove 2s ease-out infinite
+}
+
+@keyframes pinMove {
+    0% {
+        transform: translate(-50%, 0) rotate(5deg);
+    }
+    50% {
+        transform: translate(-50%, -20%) rotate(5deg);
+    }
+    100% {
+        transform: translate(-50%, 0) rotate(5deg);
+    }
+}
+
+@keyframes pulse {
+    from {}
+    70% {
+        box-shadow: 0 0 0 10px rgba(90, 153, 212, 0);
+    }
+    to {
+        transform: scale(1.2);
+        box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+    }
+}
+
+.step-footer {
+    background: rgba(39, 52, 67, .85);
+    text-align: center;
+    padding: 4rem 2rem 6rem;
+    width: 100%;
+    position: relative;
+    z-index: 2
+}
+
+.step-question {
+    font-size: 3.6rem;
+    color: #1ebea5;
+    margin-bottom: 3.5rem
+}
+
+.question-circle {
+    justify-content: space-between;
+    align-items: stretch;
+    background: rgba(39, 52, 67, 1);
+    width: 70rem;
+    height: 70rem;
+    padding: 5rem 10rem 10rem;
+    position: relative;
+    margin-right: 20vw
+}
+
+.step-3 .question-circle {
+    margin: 0
+}
+
+.question-circle .step-question {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 1rem
+}
+
+.step-question p {
+    margin-bottom: 1rem
+}
+
+.girl {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 38rem;
+    transform: translate(30rem, 5rem) scale(0.8, 0.8);
+    flex-shrink: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.animated-step .girl {
+    animation: scaleUp .5s ease-out forwards
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: translate(30rem, 5rem) scale(0.8, 0.8);
+    }
+    50% {
+        transform: translate(30rem, 5rem) scale(1.02, 1.02);
+    }
+    75% {
+        transform: translate(30rem, 5rem) scale(0.98, 0.98);
+    }
+    100% {
+        transform: translate(30rem, 5rem) scale(1, 1);
+    }
+}
+
+.pagination {
+    font-weight: 700
+}
+
+.final-step .pagination {
+    font-size: 5rem;
+    margin-top: 3rem
+}
+
+.final-step {
+    background: url(../images/final_web1.jpg) center 0 no-repeat;
+    background-size: cover
+}
+
+.final-step .question-circle {
+    background: rgba(39, 52, 67, .85)
+}
+
+.checkbox-info {
+    color: #1ebea5;
+    font-style: italic
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    margin: 2rem auto;
+    position: relative;
+    padding: 0 0 0 5rem;
+    line-height: 2.5rem;
+    cursor: pointer;
+    transition: all 0.15s linear;
+    color: #1ebea5;
+    font-size: 2rem;
+    text-align: left
+}
+
+.checkbox-item:before {
+    content: "";
+    flex-shrink: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border: 2px solid #fff;
+    margin-right: 2rem;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: all .15s linear
+}
+
+.checkbox-item.checked:before {
+    border-color: #1ebea5;
+    background: #1ebea5
+}
+
+.checkbox-item.checked {
+    color: #fff;
+    font-weight: 700
+}
+
+.buttons-block {
+    text-align: center
+}
+
+.step-btn {
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+    border: 2px solid #fff;
+    font-weight: 700;
+    border-radius: 5rem;
+    padding: 1.3rem 3rem;
+    width: 40%;
+    margin: 0 1rem
+}
+
+.icon-btn {
+    margin-right: 2rem;
+    vertical-align: middle
+}
+
+.step-btn:hover {
+    opacity: 0.8
+}
+
+.next-btn {
+    max-width: 380px;
+    width: 100%;
+    font-size: 3rem
+}
+
+@media (max-width:1200px) {
+    html {
+        font-size: 52%
+    }
+}
+
+@media (max-width:960px) {
+    html {
+        font-size: 47%
+    }
+    .step-1 {
+        background-image: url(../images/1.webp);
+        background-position: center top
+    }
+    .step-2 {
+        background-image: url(../images/map1.jpg)
+    }
+    .final-step {
+        background-image: url(../images/final_web1.jpg)
+    }
+    .step-1:before {
+        display: none
+    }
+    .step-footer {
+        padding: 4rem 2rem 6rem
+    }
+    .question-circle {
+        margin-right: 0
+    }
+    .girl {
+        width: 25rem;
+        transform: translate(-11rem, -17rem)
+    }
+}
+
+@media (max-width:600px),
+(max-height:750px) {
+    html {
+        font-size: 42%
+    }
+    .header {
+        padding: 1.5rem
+    }
+    .header .center {
+        flex-direction: column
+    }
+    .logo {
+        font-size: 3rem
+    }
+    .logo-icon,
+    .icon-btn {
+        height: 5rem
+    }
+    .slogan {
+        font-size: 1.5rem
+    }
+    .step-question {
+        font-size: 2.8rem
+    }
+    .step-btn {
+        width: 90%;
+        display: block;
+        margin: 1rem auto;
+        max-width: none;
+        padding: 1.5rem 3rem
+    }
+    .pagination {
+        position: relative;
+        z-index: 3
+    }
+}
+
+@media (max-width:360px) {
+    html {
+        font-size: 37.5%
+    }
+    .slogan {
+        font-size: 1.4rem
+    }
+    .question-circle .step-question {
+        font-size: 2.6rem
+    }
+    .question-circle {
+        padding: 5rem 12rem 10rem
+    }
+}
