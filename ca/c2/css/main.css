@@ -1,0 +1,846 @@
+@charset "UTF-8";
+/*!
+ * animate.css -https://daneden.github.io/animate.css/
+ * Version - 3.7.2
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2019 Daniel Eden
+ */
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #001f35;
+    color: white;
+}
+
+.spin {
+    max-width: 380px;
+    margin-top: 10px;
+    font-size: 2em;
+}
+
+.header {
+    background-color: #07315a;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+}
+
+img.logo {
+    max-width: 120px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.game {
+    margin: 0 auto;
+    width: 360px;
+    margin-bottom: 5vh;
+    max-height: 95vh;
+}
+
+.offer_info p {
+    margin: .1rem;
+}
+
+.gold {
+    color: gold;
+}
+
+.game-element {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    margin: 15px auto;
+}
+
+.game-row {
+    display: inline-block;
+    padding: 30px 20px;
+}
+
+.frame {
+    background: url('../images/SlotsReel.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 0% 0;
+    position: relative;
+    width: 360px;
+    overflow: hidden;
+    height: 346px;
+    max-height: 95vh;
+}
+
+.frame.above {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    color: #08315a;
+}
+
+.bell,
+.cherry,
+.diamond,
+.grape,
+.horse,
+.leaf,
+.prune,
+.seven {
+    max-width: 100%;
+    background-size: 100%;
+    background-image: url('../images/slot_elements/sprite.png');
+}
+
+.bell {
+    background-position: 0 0%;
+    background-size: 100%;
+}
+
+.cherry {
+    background-position: 0 14.285714%;
+    background-size: 100%;
+}
+
+.diamond {
+    background-position: 0 28.571429%;
+    background-size: 100%;
+}
+
+.grape {
+    background-position: 0 42.857143%;
+    background-size: 100%;
+}
+
+.horse {
+    background-position: 0 57.142857%;
+    background-size: 100%;
+}
+
+.leaf {
+    background-position: 0 71.428571%;
+    background-size: 100%;
+}
+
+.prune {
+    background-position: 0 85.714286%;
+    background-size: 100%;
+}
+
+.seven {
+    background-position: 0 100%;
+    background-size: 100%;
+}
+
+.page_503 footer {
+    background-color: #011d34;
+    padding-top: 2%;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+footer .menu {
+    width: 100%;
+    margin: 2% auto;
+}
+
+footer .menu.credability_icons li {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+footer .menu.credability_icons li>* {
+    display: block;
+    height: 3.8rem;
+    background: url('') no-repeat scroll 0 center;
+    margin: 2% auto;
+}
+
+footer .menu.credability_icons li>*.tac {
+    background-position: 0 center;
+    width: 100px;
+}
+
+footer .menu.credability_icons li>*.safe_secure {
+    background-position: -123px center;
+    width: 105px;
+}
+
+footer .menu.credability_icons li>*.virus_free {
+    background-position: -250px center;
+    width: 94px;
+}
+
+footer .menu.credability_icons li>*.support {
+    background-position: -363px center;
+    width: 180px;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+    footer .menu.credability_icons li {
+        width: 20%;
+    }
+    footer .menu.credability_icons li:last-of-type {
+        width: 34%;
+    }
+    footer .menu.credability_icons li>* {
+        background-size: 486%;
+        width: auto !important;
+    }
+    footer .menu.credability_icons li>*.tac {
+        background-position: 4px center;
+    }
+    footer .menu.credability_icons li>*.safe_secure {
+        background-position: -85px center;
+    }
+    footer .menu.credability_icons li>*.virus_free {
+        background-position: -177px center;
+    }
+    footer .menu.credability_icons li>*.support {
+        background-position: -280px center;
+        background-size: 314%;
+    }
+}
+
+footer .menu.symbols {
+    height: 2.8rem;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+    footer .menu.symbols {
+        height: auto;
+    }
+}
+
+footer .menu.symbols li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+footer .menu.symbols li>* {
+    display: block;
+    height: 3rem;
+    background: url('') no-repeat scroll 0 3px;
+}
+
+footer .menu.symbols li>*.mga {
+    background-position: 0 3px;
+    width: 102px;
+}
+
+footer .menu.symbols li>*.over_18 {
+    background-position: -116px 3px;
+    width: 56px;
+}
+
+footer .menu.symbols li>*.responsible_gaming {
+    background-position: -186px 3px;
+    width: 122px;
+}
+
+footer .menu.symbols li>*.gli {
+    background-position: -314px 3px;
+    width: 160px;
+}
+
+footer .menu.symbols li>*.gambleaware {
+    background-position: -483px 3px;
+    width: 179px;
+}
+
+footer .menu.symbols li>*.europartners {
+    background-position: -682px 3px;
+    width: 192px;
+}
+
+footer .menu.symbols li>*.playtech {
+    background-position: -887px 3px;
+    width: 134px;
+}
+
+footer .menu.payments {
+    height: 2.8rem;
+    background: url('') no-repeat scroll center center;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+    footer .menu.payments {
+        background-size: 100% auto;
+    }
+}
+
+footer .container.footer-wrap {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+footer .container.footer-wrap .navigation {
+    padding: 0;
+    font-size: 1rem;
+    *display: inline;
+    *zoom: 1;
+    margin: 2rem auto !important;
+}
+
+footer .container.footer-wrap .navigation li {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+    border-right: 1px solid #666666;
+}
+
+footer .container.footer-wrap .navigation li.last {
+    border-right: none;
+}
+
+footer .container.footer-wrap .navigation li a {
+    color: #666666;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+footer .container.footer-wrap .navigation li a:hover {
+    text-decoration: underline;
+    color: #3498db;
+}
+
+footer .container.footer-wrap .regulationWrp p {
+    margin: 1em 2em 0;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+ul.cards li,
+ul.social li {
+    vertical-align: middle;
+}
+
+ul.cards li a,
+ul.social li a {
+    display: block;
+}
+
+ul.cards li a {
+    width: 17.96875em;
+    height: 4em;
+    background-image: url('../images/25b302afae354__footer_1_.690x740.690x740+0+0.png');
+    background-repeat: no-repeat;
+    background-size: 300%;
+}
+
+ul.cards li.plus18 {
+    width: 4.1em;
+}
+
+ul.cards li.plus18 a {
+    background-position: 0 0.1em;
+}
+
+ul.cards li.plus18 a:hover {
+    background-position: -17.9687484em 0.1em;
+}
+
+ul.cards li.plus18 a:active {
+    background-position: -35.9375em 0.1em;
+}
+
+ul.cards li.gamcare {
+    width: 4.1em;
+}
+
+ul.cards li.gamcare a {
+    background-position: 0 -4.176em;
+}
+
+ul.cards li.gamcare a:hover {
+    background-position: -17.96875em -4.176em;
+}
+
+ul.cards li.gamcare a:active {
+    background-position: -35.9375em -4.176em;
+}
+
+ul.cards li.gambleaware {
+    width: 18.1em;
+}
+
+ul.cards li.gambleaware a {
+    background-position: 0 -8.352em;
+}
+
+ul.cards li.gambleaware a:hover {
+    background-position: -17.96875em -8.352em;
+}
+
+ul.cards li.gambleaware a:active {
+    background-position: -35.9375em -8.352em;
+}
+
+ul.cards li.visa {
+    width: 8.2em;
+}
+
+ul.cards li.visa a {
+    background-position: 0 -12.528em;
+}
+
+ul.cards li.visa a:hover {
+    background-position: -17.96875em -12.528em;
+}
+
+ul.cards li.visa a:active {
+    background-position: -35.9375em -12.528em;
+}
+
+ul.cards li.mastercard {
+    width: 6.8em;
+}
+
+ul.cards li.mastercard a {
+    background-position: 0 -16.704em;
+}
+
+ul.cards li.mastercard a:hover {
+    background-position: -17.96875em -16.704em;
+}
+
+ul.cards li.mastercard a:active {
+    background-position: -35.9375em -16.704em;
+}
+
+ul.cards li.maestro {
+    width: 6.5em;
+}
+
+ul.cards li.maestro a {
+    background-position: 0 -20.88em;
+}
+
+ul.cards li.maestro a:hover {
+    background-position: -17.96875em -20.88em;
+}
+
+ul.cards li.maestro a:active {
+    background-position: -35.9375em -20.88em;
+}
+
+ul.cards li.visaelectron {
+    width: 6.5em;
+}
+
+ul.cards li.visaelectron a {
+    background-position: 0 -25.056em;
+}
+
+ul.cards li.visaelectron a:hover {
+    background-position: -17.96875em -25.056em;
+}
+
+ul.cards li.visaelectron a:active {
+    background-position: -35.9375em -25.056em;
+}
+
+ul.cards li.neteller {
+    width: 14.8em;
+}
+
+ul.cards li.neteller a {
+    background-position: 0 -29.232em;
+}
+
+ul.cards li.neteller a:hover {
+    background-position: -17.96875em -29.232em;
+}
+
+ul.cards li.neteller a:active {
+    background-position: -35.9375em -29.232em;
+}
+
+ul.cards li.moneybookers {
+    width: 9em;
+}
+
+ul.cards li.moneybookers a {
+    background-position: 0 -33.408em;
+}
+
+ul.cards li.moneybookers a:hover {
+    background-position: -17.96875em -33.408em;
+}
+
+ul.cards li.moneybookers a:active {
+    background-position: -35.9375em -33.408em;
+}
+
+ul.cards li.pt {
+    width: 12em;
+}
+
+ul.cards li.pt a {
+    background-position: 0 -37.784em;
+}
+
+ul.cards li.pt a:hover {
+    background-position: -17.968748em -37.784em;
+}
+
+ul.cards li.pt a:active {
+    background-position: -35.9375em -37.784em;
+}
+
+ul.cards li.tgf {
+    width: 12em;
+}
+
+ul.cards li.tgf a {
+    background-position: 0 -42.2em;
+}
+
+ul.cards li.tgf a:hover {
+    background-position: -17.96875em -42.2em;
+}
+
+ul.cards li.tgf a:active {
+    background-position: -35.9375em -42.2em;
+}
+
+ul.cards li.responsible_gaming a {
+    background-position: 0.05rem -50.5em;
+}
+
+ul.cards li.responsible_gaming a:hover {
+    background-position: -17.968em -50.5em;
+}
+
+ul.cards li.responsible_gaming a:active {
+    background-position: -35.8em -50.5em;
+}
+
+ul.cards li.gli a {
+    background-position: 0.05rem -46.5em;
+}
+
+ul.cards li.gli a:hover {
+    background-position: -17.966em -46.7em;
+}
+
+ul.cards li.gli a:active {
+    background-position: -35.9em -46.7em;
+}
+
+ul.cards li.europartners a {
+    background-position: 0 -53.7em;
+}
+
+ul.cards li.europartners a:hover {
+    background-position: -17.86458513em -53.7em;
+}
+
+ul.cards li.europartners a:active {
+    background-position: -35.9375em -53.7em;
+}
+
+.footer-wrap .gambling {
+    display: block;
+    margin: 30px 0;
+}
+
+.footer-wrap .gambling:hover {
+    text-decoration: underline;
+}
+
+.footer-wrap .social {
+    margin: 20px 0;
+}
+
+.footer-wrap .social a {
+    color: #666;
+    width: 9em;
+    text-decoration: none;
+}
+
+.footer-wrap a:hover {
+    text-decoration: none;
+}
+
+.footer-wrap .cards {
+    padding: 0;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.footer-wrap .cards li {
+    padding: 0;
+    font-size: 0.55rem;
+}
+
+.mobile .footer-wrap .cards li {
+    font-size: 0.5rem;
+}
+
+.footer-wrap .cards li,
+.footer-wrap .social li {
+    float: none;
+    overflow: hidden;
+    display: inline-block;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+.footer-wrap .social li {
+    text-align: left;
+}
+
+.footer-wrap .licensed-regulated-wrap {
+    text-align: center;
+}
+
+.footer-wrap ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-wrap li {
+    padding: 0 10px;
+    list-style: none;
+}
+
+.footer-wrap li {
+    padding: 0 10px;
+    list-style: none;
+}
+
+.footer-wrap li {
+    padding: 0 10px;
+    list-style: none;
+}
+
+.footer-wrap .licensed-regulated-wrap .gambling {
+    display: inline-block;
+}
+
+.btn_type_logout {
+    min-width: auto;
+}
+
+ul.social li a:before {
+    content: "";
+    font-size: 0.5em;
+    float: left;
+    margin-right: 2em;
+    width: 5em;
+    height: 5em;
+    background: url('//xstatic.europacasino.com/offers/offers/assets/images/web/ic_WL_sprite.png') no-repeat;
+    background-size: 400%;
+}
+
+.macintosh ul.social li a:before {
+    font-size: 6.4px;
+}
+
+ul.social li a:hover {
+    color: #3498db;
+}
+
+ul.social li.fb a:before {
+    background-position: -10em -195em;
+}
+
+ul.social li.fb a:hover:before {
+    background-position: -15em -195em;
+}
+
+ul.social li.twitter a:before {
+    background-position: -10em -200em;
+}
+
+ul.social li.twitter a:hover:before {
+    background-position: -15em -200em;
+}
+
+ul.social li.google a:before {
+    background-position: -10em -205em;
+}
+
+ul.social li.google a:hover:before {
+    background-position: -15em -205em;
+}
+
+.screen {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: #000000cc;
+    z-index: 1;
+    left: 0;
+}
+
+.message_content .offer-image {
+    display: none;
+    max-height: 95vh;
+    padding: 5%;
+}
+
+.screen .message {
+    margin: 2vh auto;
+    background: #202121;
+    max-width: 400px;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    border-radius: 10px;
+    width: 95vw;
+    border: 1px solid #2196F3;
+    box-shadow: 0px 1px 16px 3px #504444;
+}
+
+.screen .message a.close {
+    display: none;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+
+.screen .message .message_cta a {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.5em;
+    display: block;
+}
+
+.h2,
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+}
+
+body {
+    font-size: 14px;
+}
+
+.offer a {
+    height: 70px;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 70px;
+    background: #638009;
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    margin-top: 35px;
+    font-weight: 700;
+}
+
+.screen .message {
+    max-width: 375px;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    border-radius: 10px;
+    width: 95vw;
+    border: 1px solid #2196f3;
+    box-shadow: 0 1px 16px 3px #504444;
+    position: fixed;
+    margin: auto auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: max-content;
+}
+
+.p20 {
+    color: #edff65;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.p21 {
+    color: #2863c8;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.p22 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 33px;
+}
+
+.p23 {
+    color: #2863c8;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.p24 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 33px;
+}
+
+.p25 {
+    margin-top: 15px;
+    font-size: 32px;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width:768px) {
+    .p20 {
+        font-size: 235%;
+    }
+    .p21 {
+        font-size: 165%;
+    }
+    .p22 {
+        font-size: 215%;
+    }
+    .p23 {
+        font-size: 165%;
+    }
+    .p24 {
+        font-size: 215%;
+    }
+    .p25 {
+        font-size: 215% !important;
+    }
+}
+
+@media only screen and (max-width:374px) {
+    .p20 {
+        font-size: 180%;
+    }
+    .p21 {
+        font-size: 150%;
+    }
+    .p22 {
+        font-size: 180%;
+    }
+    .p23 {
+        font-size: 150%;
+    }
+    .p24 {
+        font-size: 180%;
+    }
+    .p25 {
+        font-size: 180% !important;
+    }
+}
