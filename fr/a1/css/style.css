@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+:focus {
+    outline: 0
+}
+
+img {
+    border: 0;
+    max-width: 100%
+}
+
+html,
+body {
+    height: 100%
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+html {
+    font-size: 62.5%;
+    -webkit-text-size-adjust: none
+}
+
+body {
+    background: -webkit-radial-gradient(#cafbff 70%, #6ed4ec);
+    font-family: Arial, sans-serif;
+    color: #000;
+    font-size: 1.6rem;
+    line-height: 1.3
+}
+
+.bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.bg1 {
+    background-image: url(../img/a1.jpg)
+}
+
+.bg2 {
+    background-image: url(../img/a1.jpg)
+}
+
+.bg3 {
+    background-image: url(../img/a1.jpg)
+}
+
+.container {
+    text-align: center;
+    height: 100%
+}
+
+.container:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle
+}
+
+.step-block {
+    max-width: 400px;
+    width: 95%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 2rem 0;
+    background: rgba(35, 118, 179, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+    color: #fff
+}
+
+.step {
+    display: none
+}
+
+.step:first-child {
+    display: block
+}
+
+.step-header {
+    text-align: center;
+    border-bottom: 1px solid #d1d1d1;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden
+}
+
+.step-header h2 {
+    font-weight: normal;
+    font-size: 1.8rem;
+    padding: 2rem 1rem
+}
+
+.step-header h3 {
+    background: rgba(35, 118, 179, 0.3);
+    color: #fff;
+    padding: 2rem 1rem
+}
+
+.step-header ul {
+    padding: 2rem 1rem;
+    background: rgba(35, 118, 179, 0.3)
+}
+
+.step-header li {
+    display: inline-block;
+    margin: 0 .8rem;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #d9349f;
+    background: rgba(255, 255, 255, 0.4);
+    font-size: 2.2rem
+}
+
+.step-header li.active {
+    background: #fff
+}
+
+.step-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    background: rgba(7, 94, 84, .7);
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.2rem;
+    color: #fff
+}
+
+.step-inner {
+    padding: 2rem
+}
+
+.step p {
+    margin-bottom: 1.5rem;
+    font-size: 2rem
+}
+
+.load-step p {
+    font-size: 2.4rem
+}
+
+.load-step .loader {
+    display: none;
+    max-width: 40%;
+    margin: 0rem auto
+}
+
+.highlight {
+    color: #ecff5f
+}
+
+.btn-block {
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 1px solid #d1d1d1
+}
+
+.btn {
+    display: inline-block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-weight: bold;
+    background: #5864ff;
+    color: #fff;
+    width: 45%;
+    margin: 0 1%;
+    border-radius: 3px;
+    border: 1px solid #d1d1d1
+}
+
+.btn:hover {
+    background: #434dd2
+}
+
+.btn-no {
+    background: #da605d
+}
+
+.btn-no:hover {
+    background: rgba(180, 80, 78, 0.9)
+}
+
+p.notice {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem
+}
+
+.options {
+    max-width: 200px;
+    margin: 0 auto
+}
+
+.option-item {
+    position: relative;
+    padding-left: 5rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    line-height: 3rem;
+    text-align: left
+}
+
+.option-item:before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #d1d1d1
+}
+
+.option-item.checked:before {
+    background: #3091c9
+}
+
+.option-item.checked:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 9px;
+    border: 6px solid #fff;
+    border-left: 0;
+    border-top: 0;
+    width: 8px;
+    height: 17px;
+    transform: rotate(45deg)
+}
+
+.final-step {
+    text-align: left
+}
+
+@media(max-width:800px) {
+    html {
+        font-size: 55%
+    }
+}
+
+@media(max-width:600px) {
+    html {
+        font-size: 50%
+    }
+    .option-item {
+        line-height: 4rem
+    }
+}
