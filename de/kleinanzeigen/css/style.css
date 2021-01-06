@@ -1,0 +1,313 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: "Quattrocento Sans", sans-serif, Arial;
+    font-size: 14px;
+    color: #000;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+*:before,
+*:after,
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+.pxl,
+.hidden {
+    display: none !important;
+}
+
+p,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+figure {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: normal;
+}
+
+/* HEADER */
+
+.header {
+    text-align: center;
+    font-size: 0;
+}
+
+.header a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header .logo {
+    max-width: 135px;
+    margin: 20px 0 15px 0;
+    font-size: 0;
+}
+
+.header .logo-dynamic {
+    font-size: 0;
+    margin-top: 5px;
+    padding: 10px 0;
+}
+
+.header .logo-dynamic img {
+    height: auto;
+    width: 200px;
+}
+
+/* END HEADER */
+
+/* MAIN CONTENT */
+
+.main-content {
+    margin: 0 0.7em 0.7em 0.7em;
+}
+
+.step {
+    text-align: center;
+}
+
+.list-checkbox {
+    display: flex;
+    max-width: 600px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* TEXT */
+
+h1,
+h2 {
+    font-size: 1.6rem;
+    padding: 5px 0;
+    margin: 5px 0;
+    text-align: center;
+    min-height: 20px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+span {
+    font-size: 1.1rem;
+    padding: 1rem 0;
+    display: block;
+}
+
+p {
+    font-size: 1.1rem;
+    padding: 0.3rem 0;
+    display: block;
+}
+
+.flashy {
+    background: #3c3241;
+    color: #fff;
+    width: 100%;
+}
+
+/* END TEXT */
+
+/* IMAGE */
+
+.img-1 {
+    width: 50%;
+    max-width: 220px;
+}
+
+.list-checkbox li {
+    width: 30%;
+    margin: 5px;
+}
+
+.list-checkbox img {
+    border: 3px solid #000;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+li.checked img,
+li img:hover {
+    border-color: #32c26b;
+}
+
+/* END IMAGE */
+
+/* BUTTON */
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    align-items: center;
+}
+
+.btn {
+    color: #fff;
+    display: block;
+    margin: 0.5rem 0;
+    padding: 13px 0;
+    max-width: 220px;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.btn:hover {
+    background: #72ef36;
+    text-decoration: none;
+}
+
+.btn-1 {
+    border: 1px solid #1a4e01;
+    background: #39920f;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    color: #fff;
+    font-family: 'OpenSansB', Arial, sans-serif;
+    font-size: 1.9em;
+    min-width: 250px;
+    position: relative;
+    width: auto;
+    max-width: none;
+    padding: 13px 60px;
+}
+
+.btn-1::after {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 28px;
+    position: absolute;
+    right: 35px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    background: url(../images/btnpart.png) no-repeat;
+    animation: next 1.2s infinite normal ease-out;
+}
+
+@-webkit-keyframes next {
+    0% {
+        opacity: 0;
+        right: 35px;
+    }
+    15% {
+        opacity: 1;
+        right: 25px;
+    }
+    100% {
+        opacity: 0;
+        right: 5px;
+    }
+}
+
+@-moz-keyframes next {
+    0% {
+        opacity: 0;
+        right: 35px;
+    }
+    15% {
+        opacity: 1;
+        right: 25px;
+    }
+    100% {
+        opacity: 0;
+        right: 5px;
+    }
+}
+
+@keyframes next {
+    0% {
+        opacity: 0;
+        right: 35px;
+    }
+    15% {
+        opacity: 1;
+        right: 25px;
+    }
+    100% {
+        opacity: 0;
+        right: 5px;
+    }
+}
+
+/* END BUTTON */
+
+/* END MAIN CONTENT */
+
+@media (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+    .header a.logo-dynamic {
+        max-width: none;
+    }
+    .header .logo-dynamic img {
+        height: 50px;
+        width: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header a {
+        max-width: 400px;
+    }
+    .header .logo {
+        max-width: 140px;
+    }
+}

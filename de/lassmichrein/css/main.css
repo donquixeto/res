@@ -1,0 +1,196 @@
+@import url(https://fonts.googleapis.com/css?family=Muli:300,400,600,700);
+* {
+    margin: 0;
+    padding: 0
+}
+
+:focus {
+    outline: 0
+}
+
+img {
+    border: none
+}
+
+html,
+body {
+    -webkit-text-size-adjust: none
+}
+
+body {
+    background: #000000;
+    font-family: 'Muli', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    min-width: 320px;
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+a {
+    color: #fff
+}
+
+.wrap {
+    position: relative;
+    padding: 0 15px
+}
+
+.slogan-box {
+    padding: 20px 0;
+    text-align: center;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.slogan-box h3 {
+    font-size: 26px;
+    color: #00aeff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.slogan-box p {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 10px 0;
+}
+
+.pics {
+    text-align: center
+}
+
+.pics img {
+    margin: 10px;
+}
+
+.step {
+    display: none
+}
+
+.step:first-child {
+    display: block
+}
+
+.question {
+    text-align: center;
+    padding: 10px 0 50px
+}
+
+.question h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.btn {
+    min-width: 180px;
+    display: inline-block;
+    padding: 13px 0;
+    margin: 0 15px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.1s ease 0s;
+    background: #00aeff;
+}
+
+.btn-no {
+    background: #fff;
+    color: #00aeff
+}
+
+.btn.btn-no:hover {
+    /* background: #fff; */
+}
+
+.btn:hover {
+    background: #fff;
+    color: #00aeff
+}
+
+.btn-first,
+.btn-last {
+    min-width: 300px;
+}
+
+.final-step {
+    max-width: 890px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.final-step h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+.final-step ul {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.final-step ul li {
+    font-size: 20px;
+    margin-bottom: 5px;
+    list-style-type: decimal;
+    line-height: 26px;
+    list-style-position: inside;
+}
+
+.terms {
+    font-size: 14px;
+    color: #dcdcdc;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 770px) {
+    body {
+        font-size: 18px
+    }
+    .pics img {
+        width: 250px
+    }
+    .question h3 {
+        font-size: 24px
+    }
+    .btn {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .btn-first,
+    .btn-last {
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 415px) {
+    body {
+        font-size: 12px
+    }
+    .pics img {
+        width: 130px;
+        margin: 3px;
+        border-width: 2px
+    }
+    .question h3 {
+        font-size: 18px;
+        margin-bottom: 10px
+    }
+    .final-step h3 {
+        font-size: 18px
+    }
+    .final-step ul li {
+        font-size: 12px
+    }
+    .terms {
+        font-size: 11px
+    }
+}

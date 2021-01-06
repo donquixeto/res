@@ -1,0 +1,47 @@
+body {
+    background: #008392;
+    font: 12px/16px Tahoma, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #fff;
+}
+
+h1 {
+    color: #fff;
+}
+
+h2 {
+    color: #fff;
+}
+
+h2 span {
+    color: #fff;
+}
+
+h3 {
+    color: #fff;
+}
+
+h3 span {
+    color: fff;
+}
+
+aside p {
+    color: #fff;
+}
+
+.done_marker li {
+    color: #fff;
+}
+
+.decimal li {
+    color: #fff;
+}
+
+.step4 .agree_label {
+    color: #fff;
+}

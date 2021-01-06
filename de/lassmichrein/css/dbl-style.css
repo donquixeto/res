@@ -1,0 +1,114 @@
+.pushclient-chrome-style-notification {
+    width: 422px;
+    top: 1px;
+    left: calc(50% - 211px);
+    background-color: #F0EFF0;
+    margin: 0;
+    padding: 0;
+}
+
+.pushclient-chrome-style-notification {
+    box-shadow: 0 0 4px #888;
+    font-size: 11px;
+    font-weight: 400;
+    position: fixed;
+    z-index: 2147483647;
+}
+
+.pushclient-safari-notification-inner-wrapper {
+    margin: 0;
+    padding: 0 20px 10px;
+}
+
+.pushclient-notification-image-wrapper-safari {
+    float: left;
+    position: relative;
+    margin: 15px 15px 0 0 !important;
+    padding: 0 !important;
+    display: inline-block;
+}
+
+.pushclient-chrome-style-notification {
+    word-spacing: normal !important;
+    letter-spacing: normal !important;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.pushclient-text-wrapper-safari {
+    position: relative !important;
+    padding: 10px 0 0 !important;
+    color: #000 !important;
+    text-align: left !important;
+    margin: 0 !important;
+    line-height: 1.4em !important;
+    display: inline-block !important;
+    width: calc(100% - 80px) !important;
+}
+
+.pushclient-notification-title-safari {
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4em;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pushclient-notification-message-safari {
+    font-size: 12px !important;
+    line-height: 1.4em !important;
+    margin: 10px 0 !important;
+    padding: 0 !important;
+    text-align: left !important;
+    font-family: 'Open Sans', sans-serif !important;
+    color: black;
+}
+
+.pushclient-chrome-style-notification>p {
+    color: #fff;
+    font: 300 27px/1.2 Roboto, Arial, Helvetica;
+    text-shadow: 0 0 1px #fff;
+    margin-bottom: 28px;
+}
+
+.pushclient-chrome-style-notification .pushclient-chrome-style-notification-btn {
+    width: 122px !important;
+    height: 26px !important;
+    font-size: 12px !important;
+    cursor: pointer !important;
+    line-height: 1.1em !important;
+    border-radius: 4px !important;
+    color: #fff !important;
+    background: linear-gradient(to bottom, #64b4f4, #0084f6) !important;
+    border: 1px solid #42a2f2 !important;
+    display: inline-block !important;
+    font-weight: 400 !important;
+    margin: 0 !important;
+    padding: 5px !important;
+    text-transform: none !important;
+    box-sizing: border-box !important;
+    font-family: Arial !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+    white-space: nowrap !important;
+}
+
+.pushclient-chrome-style-notification .pushclient-chrome-style-notification-btn.pushclient-btn-close {
+    background: #FFF !important;
+    color: #000 !important;
+    border-color: #CCC !important;
+    margin-right: 20px !important;
+    width: 100px !important;
+}
+
+.pushclient-safari-notification-inner-wrapper img {
+    height: 65px !important;
+    width: 65px !important;
+}
+
+.pushclient-chrome-style-notification .pushclient-button-wrapper {
+    float: right !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
