@@ -1,0 +1,56 @@
+body {
+    background-color: #ded6cf;
+    color: #000;
+}
+
+a {
+    color: #000;
+}
+
+.wrapper>header {
+    background-color: #075e55;
+}
+
+.wrapper>header img {
+    height: 50px;
+}
+
+.box-img {
+    border-color: #999999;
+    background-color: #ffffff;
+}
+
+.box-img .sex-app {
+    background-color: #e8e2d2;
+    color: #32645b;
+}
+
+.box-img .sex-app:before {
+    background-color: #32645b;
+}
+
+.btn {
+    color: #fff;
+}
+
+.btn-JA {
+    background-color: #075e55;
+}
+
+.btn-no {
+    background-color: #858585;
+}
+
+.btn-confirm {
+    background-color: #075e55;
+    padding: 15px 25px;
+}
+
+.progress-bar {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.progress-bar:before {
+    background-color: #075e55;
+}
