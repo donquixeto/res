@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer !important
+}
+
+ul li {
+    list-style: none
+}
+
+html {
+    font-size: 62.5%;
+    -webkit-text-size-adjust: 100%
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+    max-width: 100%
+}
+
+body {
+    font-family: Myriad, Arial, sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+    min-width: 320px;
+    min-height: 100vh;
+    line-height: 1.3;
+    color: #fff;
+    background: #161616;
+    padding-top: 30px
+}
+
+:focus {
+    outline: 0
+}
+
+.header {
+    text-align: center;
+    padding: 1rem
+}
+
+.logo {
+    max-width: 350px
+}
+
+.step {
+    display: none;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    text-align: center
+}
+
+.step.visible {
+    display: block;
+    height: 100vh;
+}
+
+.last-step {
+    margin-top: 1rem;
+}
+
+.last-step p {
+    display: inline-block;
+    width: 55%;
+    font-family: Myriad;
+    font-size: 30px;
+    text-transform: none;
+    color: #fff
+}
+
+.step-title,
+p.highlight {
+    font-family: MyriadB;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 2rem;
+    color: #ff2357
+}
+
+.step-title span {
+    font-family: Myriad;
+    color: #fff
+}
+
+.btn {
+    display: inline-block;
+    width: 250px;
+    overflow: hidden;
+    transition: all 0.2s linear;
+    margin: 3rem 2.5rem;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.btn:hover a {
+    border: 8px solid #ff2357;
+    border-radius: 10px;
+}
+
+.btn-start {
+    font-family: MyriadB;
+    background: #ff5a81;
+    border-radius: 3px;
+    color: #fff;
+    display: block;
+    font-size: 30px;
+    margin: 4rem auto;
+    overflow: hidden;
+    padding: 0.5rem 0;
+    text-align: center;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    width: 300px
+}
+
+.btn-start:hover {
+    background: #ff2357;
+}
+
+@media (max-width:960px) {
+    html {
+        font-size: 55%
+    }
+}
+
+@media (max-width:600px) {
+    .btn-block {
+        width: 100%;
+    }
+    .step-title,
+    p.highlight {
+        font-size: 30px;
+    }
+    html {
+        font-size: 50%
+    }
+    .btn {
+        width: 40%;
+        margin: 10px;
+        border: 2px solid white;
+    }
+    body {
+        padding-top: 10px;
+        letter-spacing: 1px;
+        line-height: 1.3;
+    }
+    .step-title,
+    p.highlight {
+        font-size: 30px;
+    }
+    .last-step p {
+        width: 92%;
+        font-size: 30px;
+    }
+}
